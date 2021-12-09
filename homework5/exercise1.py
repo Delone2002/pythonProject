@@ -2,21 +2,30 @@
 
 import re
 
+
 def pasw(s=""):
+    '''Проверка пароля
+    
+    Функция принимает строку и проверяет ее на
+    удовлетворение критериям пароля. Возвращает
+    соответственно истину или ложь.
+
+    '''
+
     condition = 0
 
-    if(len(s)>=6):
-        condition+=1
+    if(len(s) >= 6):
+        condition += 1
     if(re.match("\d+", s) is not None):
-        condition+=1
+        condition += 1
         print(2)
     if(re.match("\D+", s) is not None):
-        condition+=1
+        condition += 1
     sLow = s.lower()
-    if(sLow.find("password")==-1):
-        condition+=1
+    if(sLow.find("password") == -1):
+        condition += 1
 
-    if(condition==4):
+    if(condition == 4):
         return True
     return False
 

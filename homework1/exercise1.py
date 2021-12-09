@@ -1,6 +1,11 @@
 #!/usr/bin/python3
 
 def isint(s):
+    '''Проверка числа на целочисленность
+    
+    Передается любой объект. Если его тип int, то метод возращает True, иначе False
+
+    '''
     try:
         int(s)
         return True
@@ -9,7 +14,8 @@ def isint(s):
 
 a = input("Enter the first number: ");
 b = input("Enter the second number: ");
-if not (a.replace('.', '0').isdigit() and b.replace('.', '0').isdigit()):
+
+if not ((a.replace('.', '0').isdigit()) and (b.replace('.', '0').isdigit())):
     print("The entered characters arn't numbers!")
 else:
     if b!='0':

@@ -1,0 +1,38 @@
+-bash-4.2$ pip3 list
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+numpy (1.19.5)
+pip (9.0.3)
+setuptools (39.2.0)
+-bash-4.2$ python3 -m venv .venv
+-bash-4.2$ source .venv/bin/activate
+(.venv) -bash-4.2$ pip3 install requests
+Collecting requests
+  Downloading https://files.pythonhosted.org/packages/92/96/144f70b972a9c0eabbd4391ef93ccd49d0f2747f4f6a2a2738e99e5adc65/requests-2.26.0-py2.py3-none-any.whl (62kB)
+    100% |████████████████████████████████| 71kB 998kB/s
+Collecting urllib3<1.27,>=1.21.1 (from requests)
+  Downloading https://files.pythonhosted.org/packages/af/f4/524415c0744552cce7d8bf3669af78e8a069514405ea4fcbd0cc44733744/urllib3-1.26.7-py2.py3-none-any.whl (138kB)
+    100% |████████████████████████████████| 143kB 1.6MB/s
+Collecting idna<4,>=2.5; python_version >= "3" (from requests)
+  Downloading https://files.pythonhosted.org/packages/04/a2/d918dcd22354d8958fe113e1a3630137e0fc8b44859ade3063982eacd2a4/idna-3.3-py3-none-any.whl (61kB)
+    100% |████████████████████████████████| 61kB 3.7MB/s
+Collecting charset-normalizer~=2.0.0; python_version >= "3" (from requests)
+  Downloading https://files.pythonhosted.org/packages/47/84/b06f6729fac8108c5fa3e13cde19b0b3de66ba5538c325496dbe39f5ff8e/charset_normalizer-2.0.9-py3-none-any.whl
+Collecting certifi>=2017.4.17 (from requests)
+  Downloading https://files.pythonhosted.org/packages/37/45/946c02767aabb873146011e665728b680884cd8fe70dde973c640e45b775/certifi-2021.10.8-py2.py3-none-any.whl (149kB)
+    100% |████████████████████████████████| 153kB 3.7MB/s
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+Successfully installed certifi-2021.10.8 charset-normalizer-2.0.9 idna-3.3 requests-2.26.0 urllib3-1.26.7
+You are using pip version 9.0.3, however version 21.3.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(.venv) -bash-4.2$ pip3 list
+DEPRECATION: The default format will switch to columns in the future. You can use --format=(legacy|columns) (or define a format=(legacy|columns) in your pip.conf under the [list] section) to disable this warning.
+certifi (2021.10.8)
+charset-normalizer (2.0.9)
+idna (3.3)
+pip (9.0.3)
+requests (2.26.0)
+setuptools (39.2.0)
+urllib3 (1.26.7)
+You are using pip version 9.0.3, however version 21.3.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(.venv) -bash-4.2$
